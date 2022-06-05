@@ -1,0 +1,4 @@
+cache.o: cache.S \
+ /home/peich/share/source/u-boot-2012.10/include/linux/linkage.h \
+ /home/peich/share/source/u-boot-2012.10/include/asm/linkage.h \
+ /home/peich/share/source/u-boot-2012.10/include/linux/config.h

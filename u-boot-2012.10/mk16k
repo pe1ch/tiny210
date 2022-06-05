@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "./mkmini210 u-boot.bin u-boot.16k"
+./mkmini210 u-boot.bin u-boot.16k

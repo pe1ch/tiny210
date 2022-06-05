@@ -1,0 +1,1 @@
+cmd_examples/standalone/hello_world := arm-linux-ld   -g -Ttext 0xc100000 -o examples/standalone/hello_world -e hello_world examples/standalone/hello_world.o examples/standalone/libstubs.o -L/usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1 -lgcc

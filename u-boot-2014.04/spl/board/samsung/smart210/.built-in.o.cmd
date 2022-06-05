@@ -1,0 +1,1 @@
+cmd_spl/board/samsung/smart210/built-in.o :=  arm-linux-ld     -r -o spl/board/samsung/smart210/built-in.o spl/board/samsung/smart210/smart210.o spl/board/samsung/smart210/onenand.o spl/board/samsung/smart210/lowlevel_init.o 

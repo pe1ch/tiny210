@@ -1,0 +1,1 @@
+cmd_arch/arm/cpu/armv7/s5pc1xx/built-in.o :=  arm-linux-ld     -r -o arch/arm/cpu/armv7/s5pc1xx/built-in.o arch/arm/cpu/armv7/s5pc1xx/cache.o arch/arm/cpu/armv7/s5pc1xx/reset.o arch/arm/cpu/armv7/s5pc1xx/clock.o 
