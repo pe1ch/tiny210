@@ -223,6 +223,12 @@ int board_nand_init(struct nand_chip *nand)
 	writel(cfg, &nand_reg->nfconf);
 	
 	writel((0x1 << 1) | (0x1 << 0), &nand_reg->nfcont);
+
+//#define NFCONF_VAL	    (2<<23)|(7<<12)|(7<<8)|(7<<4)|(1<<3)|(0<<2)|(1<<1)|(0<<0)
+//#define NFCONT_VAL      (0x1<<23)|(0x1<<22)|(0<<18)|(0<<17)|(0<<16)|(0<<10)|(0<<9)|(0<<8)|(0<<7)|(0<<6)|(0x2<<1)|(1<<0)
+//writel(NFCONF_VAL, &nand_reg->nfconf);
+//
+//writel(NFCONT_VAL, &nand_reg->nfcont);
 	/* Disable chip select and Enable NAND Flash Controller */
 	
 	/* Config GPIO */

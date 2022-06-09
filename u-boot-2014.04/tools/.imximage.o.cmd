@@ -1,11 +1,11 @@
-cmd_tools/imximage.o := gcc -Wp,-MD,tools/.imximage.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/libfdt_env.h -idirafterinclude -idirafter/home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include -I/home/peich/share/source/smart210-SDK/u-boot-2014.04/lib/libfdt -I/home/peich/share/source/smart210-SDK/u-boot-2014.04/tools -DCONFIG_SYS_TEXT_BASE=0x20000000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/imximage.o tools/imximage.c
+cmd_tools/imximage.o := gcc -Wp,-MD,tools/.imximage.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/libfdt_env.h -idirafterinclude -idirafter/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include -I/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/lib/libfdt -I/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/tools -DCONFIG_SYS_TEXT_BASE=0x20000000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/imximage.o tools/imximage.c
 
 source_tools/imximage.o := tools/imximage.c
 
 deps_tools/imximage.o := \
   /usr/include/stdc-predef.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/libfdt_env.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/compiler.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/libfdt_env.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/compiler.h \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h \
   /usr/include/stdint.h \
@@ -88,7 +88,7 @@ deps_tools/imximage.o := \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
   /usr/include/byteswap.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/linux/types.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/linux/types.h \
     $(wildcard include/config/uid16.h) \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/stddef.h \

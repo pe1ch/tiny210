@@ -13,7 +13,7 @@
 @	compiled by GNU C version 4.3.0 20080428 (Red Hat 4.3.0-8), GMP version 4.3.2, MPFR version 2.4.2-p2, MPC version 0.8.1
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc -Iinclude
-@ -I/home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include
+@ -I/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include
 @ -iprefix
 @ /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/
 @ -isysroot /usr/local/arm/4.5.1/bin/../arm-none-linux-gnueabi/sys-root
@@ -92,10 +92,10 @@ main:
 	.size	main, .-main
 	.text
 .Letext0:
-	.file 2 "/home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/u-boot.h"
+	.file 2 "/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/u-boot.h"
 	.file 3 "include/linux/types.h"
 	.file 4 "include/net.h"
-	.file 5 "/home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/arch/cpu.h"
+	.file 5 "/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/arch/cpu.h"
 	.section	.debug_info
 	.4byte	0x31b
 	.2byte	0x2
@@ -804,9 +804,6 @@ main:
 	.ascii	"eth_current\000"
 .LASF15:
 	.ascii	"bi_arm_freq\000"
-.LASF45:
-	.ascii	"/home/peich/share/source/smart210-SDK/u-boot-2014.0"
-	.ascii	"4\000"
 .LASF32:
 	.ascii	"next\000"
 .LASF30:
@@ -861,6 +858,9 @@ main:
 	.ascii	"bd_info\000"
 .LASF9:
 	.ascii	"long long unsigned int\000"
+.LASF45:
+	.ascii	"/home/peich/share/source/tiny210v2-sdk/u-boot-2014."
+	.ascii	"04\000"
 .LASF29:
 	.ascii	"recv\000"
 .LASF6:

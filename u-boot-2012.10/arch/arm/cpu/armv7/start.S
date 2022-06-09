@@ -155,7 +155,7 @@ reset:
 	/* the mask ROM code should have PLL and others stable */
 #ifndef CONFIG_SKIP_LOWLEVEL_INIT
 	bl	cpu_init_cp15
-	bl	cpu_init_crit
+	bl	cpu_init_crit	// lowlevel_init  在前16K会初始化DDR、并将完整的uboot搬运到DDR中
 #endif
 
 /* Set stackpointer in internal RAM to call board_init_f */
@@ -165,6 +165,7 @@ call_board_init_f:
 //	ldr	r0,=0x00000000
 //	bl	board_init_f
 
+#if 0	// 方法一：跳转到ddr执行 board_init_f
 	ldr r0, =_start
 	ldr r1, _board_init_f_ofs
 
@@ -174,6 +175,13 @@ call_board_init_f:
 
 _board_init_f_ofs:
 	.word board_init_f - _start
+
+#else	// 方法二
+	ldr lr, =board_init_f
+	ldr	r0,=0x00000000
+	mov pc, lr
+	
+#endif
 
 /*------------------------------------------------------------------------------*/
  

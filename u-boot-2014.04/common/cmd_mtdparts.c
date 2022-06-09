@@ -331,13 +331,17 @@ static int part_validate_eraseblock(struct mtdids *id, struct part_info *part)
 		}
 
 		size = part->size;
+		
 		printf("%s:%d part->size 0x%x  mtd->erasesize 0x%x\n", __FUNCTION__, __LINE__, 
 				part->size, mtd->erasesize);
+
 		if (do_div(size, mtd->erasesize)) {
-			printf("%s%d: partition (%s) size alignment incorrect\n",
-			       MTD_DEV_TYPE(id->type), id->num, part->name);
+//		if (part->size % mtd->erasesize) {
+			printf("%s%d: partition (%s) size alignment incorrect value 0x%x\n",
+			       MTD_DEV_TYPE(id->type), id->num, part->name, part->size % mtd->erasesize);
 			return 1;
 		}
+
 	} else {
 		/*
 		 * Multiple eraseregions (non-uniform NOR),

@@ -1,4 +1,4 @@
-cmd_common/memsize.o := arm-linux-gcc -Wp,-MD,common/.memsize.o.d  -nostdinc -isystem /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include -Iinclude  -I/home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x20000000 -Wall -Wstrict-prototypes -Wno-format-security -fno-builtin -ffreestanding -Os -fno-stack-protector -g -Wno-format-nonliteral -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -mword-relocations -march=armv7-a -ffunction-sections -fdata-sections -fno-common -ffixed-r9 -msoft-float -pipe    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(memsize)"  -D"KBUILD_MODNAME=KBUILD_STR(memsize)" -c -o common/memsize.o common/memsize.c
+cmd_common/memsize.o := arm-linux-gcc -Wp,-MD,common/.memsize.o.d  -nostdinc -isystem /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include -Iinclude  -I/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x20000000 -Wall -Wstrict-prototypes -Wno-format-security -fno-builtin -ffreestanding -Os -fno-stack-protector -g -Wno-format-nonliteral -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork -mabi=aapcs-linux -mword-relocations -march=armv7-a -ffunction-sections -fdata-sections -fno-common -ffixed-r9 -msoft-float -pipe    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(memsize)"  -D"KBUILD_MODNAME=KBUILD_STR(memsize)" -c -o common/memsize.o common/memsize.c
 
 source_common/memsize.o := common/memsize.c
 
@@ -224,17 +224,17 @@ deps_common/memsize.o := \
     $(wildcard include/config/sys/nand/eccsize.h) \
     $(wildcard include/config/sys/nand/eccbytes.h) \
     $(wildcard include/config/cmd/nand/yaffs.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/arch/cpu.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/io.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/arch/cpu.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/io.h \
   include/linux/types.h \
     $(wildcard include/config/uid16.h) \
   include/linux/posix_types.h \
   include/linux/stddef.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/posix_types.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/types.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/posix_types.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/types.h \
     $(wildcard include/config/arm64.h) \
   /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include/stdbool.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/byteorder.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/compiler.h \
     $(wildcard include/config/trace/branch/profiling.h) \
@@ -247,7 +247,7 @@ deps_common/memsize.o := \
   include/linux/compiler-gcc4.h \
   include/linux/byteorder/swab.h \
   include/linux/byteorder/generic.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/memory.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/memory.h \
     $(wildcard include/config/discontigmem.h) \
   include/config_cmd_default.h \
     $(wildcard include/config/cmd/default/h.h) \
@@ -269,7 +269,7 @@ deps_common/memsize.o := \
     $(wildcard include/config/cmd/setgetdcr.h) \
     $(wildcard include/config/cmd/source.h) \
     $(wildcard include/config/cmd/ximg.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/config.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/config.h \
     $(wildcard include/config/h/.h) \
     $(wildcard include/config/lmb.h) \
     $(wildcard include/config/sys/boot/ramdisk/high.h) \
@@ -315,18 +315,18 @@ deps_common/memsize.o := \
   include/asm-offsets.h \
   include/generated/generic-asm-offsets.h \
   include/linux/bitops.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/bitops.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/proc/system.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/bitops.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/proc/system.h \
     $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/sa110.h) \
   include/linux/string.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/string.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/string.h \
     $(wildcard include/config/use/arch/memcpy.h) \
     $(wildcard include/config/use/arch/memset.h) \
   include/linux/linux_string.h \
   include/linux/stringify.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/ptrace.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/proc/ptrace.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/ptrace.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/proc/ptrace.h \
     $(wildcard include/config/arm/thumb.h) \
   /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include/stdarg.h \
   include/part.h \
@@ -368,7 +368,7 @@ deps_common/memsize.o := \
   include/compiler.h \
   /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include/stddef.h \
   include/lmb.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/u-boot.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/u-boot.h \
     $(wildcard include/config/sys/generic/board.h) \
   include/command.h \
     $(wildcard include/config/sys/help/cmd/width.h) \
@@ -377,7 +377,7 @@ deps_common/memsize.o := \
     $(wildcard include/config/cmd/portio.h) \
     $(wildcard include/config/needs/manual/reloc.h) \
   include/linker_lists.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/global_data.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/global_data.h \
     $(wildcard include/config/omap.h) \
     $(wildcard include/config/fsl/esdhc.h) \
     $(wildcard include/config/at91family.h) \
@@ -395,7 +395,7 @@ deps_common/memsize.o := \
     $(wildcard include/config/sys/i2c.h) \
   include/linux/list.h \
   include/linux/poison.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/mach-types.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/mach-types.h \
     $(wildcard include/config/arch/ebsa110.h) \
     $(wildcard include/config/arch/rpc.h) \
     $(wildcard include/config/arch/ebsa285.h) \
@@ -1490,8 +1490,8 @@ deps_common/memsize.o := \
     $(wildcard include/config/mach/omap5/sevm.h) \
     $(wildcard include/config/mach/armadillo800eva.h) \
     $(wildcard include/config/mach/kzm9g.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/setup.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/u-boot-arm.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/setup.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/u-boot-arm.h \
   include/uuid.h \
   include/vsprintf.h \
     $(wildcard include/config/sys/vsnprintf.h) \
@@ -1503,9 +1503,9 @@ deps_common/memsize.o := \
     $(wildcard include/config/api.h) \
     $(wildcard include/config/bootp/dns2.h) \
     $(wildcard include/config/netconsole.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/cache.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/cache.h \
     $(wildcard include/config/sys/cacheline/size.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/system.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/system.h \
   include/bootstage.h \
     $(wildcard include/config/bootstage/user/count.h) \
     $(wildcard include/config/bootstage.h) \

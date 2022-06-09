@@ -13,14 +13,14 @@ void copy_code_to_dram(void)
 
 	ch = *(volatile unsigned int *)(0xD0037488);
 
-	// ����ָ��
+	// ???????
 	copy_sd_mmc_to_mem copy_bl2 = (copy_sd_mmc_to_mem) (*(unsigned int *) (0xD0037F98));
 	
-	// ͨ��0
+	// ???0
 	if (ch == 0xEB000000)
 	{
 		// 0:channel 0
-		// 49:Դ,����λ������49,1 sector = 512 bytes
+		// 49:?,????��??????49,1 sector = 512 bytes
 		ret = copy_bl2(0, sec_no,   128,(unsigned int *)(dest), 0);
         ret = copy_bl2(0, sec_no+128, 128,(unsigned int *)(dest+0x10000), 0);
         ret = copy_bl2(0, sec_no+256, 128,(unsigned int *)(dest+0x20000), 0);

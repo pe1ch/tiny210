@@ -1,11 +1,11 @@
-cmd_tools/env_embedded.o := gcc -Wp,-MD,tools/.env_embedded.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/libfdt_env.h -idirafterinclude -idirafter/home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include -I/home/peich/share/source/smart210-SDK/u-boot-2014.04/lib/libfdt -I/home/peich/share/source/smart210-SDK/u-boot-2014.04/tools -DCONFIG_SYS_TEXT_BASE=0x20000000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/env_embedded.o tools/env_embedded.c
+cmd_tools/env_embedded.o := gcc -Wp,-MD,tools/.env_embedded.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/libfdt_env.h -idirafterinclude -idirafter/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include -I/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/lib/libfdt -I/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/tools -DCONFIG_SYS_TEXT_BASE=0x20000000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/env_embedded.o tools/env_embedded.c
 
 source_tools/env_embedded.o := tools/env_embedded.c
 
 deps_tools/env_embedded.o := \
   /usr/include/stdc-predef.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/libfdt_env.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/compiler.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/libfdt_env.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/compiler.h \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h \
   /usr/include/stdint.h \
@@ -88,7 +88,7 @@ deps_tools/env_embedded.o := \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
   /usr/include/byteswap.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/linux/types.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/linux/types.h \
     $(wildcard include/config/uid16.h) \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/stddef.h \
@@ -219,7 +219,7 @@ deps_tools/env_embedded.o := \
     $(wildcard include/config/sys/nand/eccsize.h) \
     $(wildcard include/config/sys/nand/eccbytes.h) \
     $(wildcard include/config/cmd/nand/yaffs.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/arch/cpu.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/arch/cpu.h \
   include/config_cmd_default.h \
     $(wildcard include/config/cmd/default/h.h) \
     $(wildcard include/config/cmd/bdi.h) \
@@ -240,7 +240,7 @@ deps_tools/env_embedded.o := \
     $(wildcard include/config/cmd/setgetdcr.h) \
     $(wildcard include/config/cmd/source.h) \
     $(wildcard include/config/cmd/ximg.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/config.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/config.h \
     $(wildcard include/config/h/.h) \
     $(wildcard include/config/lmb.h) \
     $(wildcard include/config/sys/boot/ramdisk/high.h) \

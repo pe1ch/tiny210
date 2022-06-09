@@ -1,13 +1,13 @@
-cmd_spl/u-boot-spl.lds := arm-linux-gcc -E -Wp,-MD,spl/.u-boot-spl.lds.d -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x20000000 -DCONFIG_SPL_BUILD  -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork  -mabi=aapcs-linux  -march=armv7-a   -ffunction-sections -fdata-sections -fno-common -ffixed-r9  -msoft-float  -pipe -Iinclude  -I/home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include  -nostdinc -isystem /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include -include /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/u-boot/u-boot.lds.h -include /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/config.h -DCPUDIR=arch/arm/cpu/armv7  -ansi -D__ASSEMBLY__ -x assembler-with-cpp -P -o spl/u-boot-spl.lds /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/cpu/u-boot-spl.lds
+cmd_spl/u-boot-spl.lds := arm-linux-gcc -E -Wp,-MD,spl/.u-boot-spl.lds.d -D__KERNEL__ -DCONFIG_SYS_TEXT_BASE=0x20000000 -DCONFIG_SPL_BUILD  -DCONFIG_ARM -D__ARM__ -marm -mno-thumb-interwork  -mabi=aapcs-linux  -march=armv7-a   -ffunction-sections -fdata-sections -fno-common -ffixed-r9  -msoft-float  -pipe -Iinclude  -I/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include  -nostdinc -isystem /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/include -include /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/u-boot/u-boot.lds.h -include /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/config.h -DCPUDIR=arch/arm/cpu/armv7  -ansi -D__ASSEMBLY__ -x assembler-with-cpp -P -o spl/u-boot-spl.lds /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/cpu/u-boot-spl.lds
 
-source_spl/u-boot-spl.lds := /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/cpu/u-boot-spl.lds
+source_spl/u-boot-spl.lds := /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/cpu/u-boot-spl.lds
 
 deps_spl/u-boot-spl.lds := \
     $(wildcard include/config/spl/max/size.h) \
     $(wildcard include/config/spl/bss/max/size.h) \
     $(wildcard include/config/spl/max/footprint.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/u-boot/u-boot.lds.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/config.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/u-boot/u-boot.lds.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/config.h \
     $(wildcard include/config/sys/arch.h) \
     $(wildcard include/config/sys/cpu.h) \
     $(wildcard include/config/sys/board.h) \
@@ -120,7 +120,7 @@ deps_spl/u-boot-spl.lds := \
     $(wildcard include/config/sys/nand/eccsize.h) \
     $(wildcard include/config/sys/nand/eccbytes.h) \
     $(wildcard include/config/cmd/nand/yaffs.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/arch/cpu.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/arch/cpu.h \
   include/config_cmd_default.h \
     $(wildcard include/config/cmd/default/h.h) \
     $(wildcard include/config/cmd/bdi.h) \
@@ -141,7 +141,7 @@ deps_spl/u-boot-spl.lds := \
     $(wildcard include/config/cmd/setgetdcr.h) \
     $(wildcard include/config/cmd/source.h) \
     $(wildcard include/config/cmd/ximg.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include/asm/config.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include/asm/config.h \
     $(wildcard include/config/h/.h) \
     $(wildcard include/config/lmb.h) \
     $(wildcard include/config/sys/boot/ramdisk/high.h) \

@@ -1,11 +1,11 @@
-cmd_tools/image-fit.o := gcc -Wp,-MD,tools/.image-fit.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/libfdt_env.h -idirafterinclude -idirafter/home/peich/share/source/smart210-SDK/u-boot-2014.04/arch/arm/include -I/home/peich/share/source/smart210-SDK/u-boot-2014.04/lib/libfdt -I/home/peich/share/source/smart210-SDK/u-boot-2014.04/tools -DCONFIG_SYS_TEXT_BASE=0x20000000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/image-fit.o tools/image-fit.c
+cmd_tools/image-fit.o := gcc -Wp,-MD,tools/.image-fit.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -include /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/libfdt_env.h -idirafterinclude -idirafter/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/arch/arm/include -I/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/lib/libfdt -I/home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/tools -DCONFIG_SYS_TEXT_BASE=0x20000000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -D_GNU_SOURCE  -c -o tools/image-fit.o tools/image-fit.c
 
 source_tools/image-fit.o := tools/image-fit.c
 
 deps_tools/image-fit.o := \
   /usr/include/stdc-predef.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/libfdt_env.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/compiler.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/libfdt_env.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/compiler.h \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h \
   /usr/include/stdint.h \
@@ -88,7 +88,7 @@ deps_tools/image-fit.o := \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
   /usr/include/byteswap.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/include/linux/types.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/include/linux/types.h \
     $(wildcard include/config/uid16.h) \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/stddef.h \
@@ -105,8 +105,8 @@ deps_tools/image-fit.o := \
   tools/../common/image-fit.c \
     $(wildcard include/config/spl/build.h) \
     $(wildcard include/config/fit/spl/print.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/tools/mkimage.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/tools/os_support.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/tools/mkimage.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/tools/os_support.h \
   include/compiler.h \
   /usr/include/x86_64-linux-gnu/sys/stat.h \
   /usr/include/time.h \
@@ -122,17 +122,17 @@ deps_tools/image-fit.o := \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd.h \
   include/sha1.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/tools/fdt_host.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/tools/../include/libfdt.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/tools/fdt_host.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/tools/../include/libfdt.h \
   include/libfdt_env.h \
   include/fdt.h \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/tools/../include/fdt_support.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/tools/../include/fdt_support.h \
     $(wildcard include/config/of/libfdt.h) \
     $(wildcard include/config/has/fsl/dr/usb.h) \
     $(wildcard include/config/has/fsl/mph/usb.h) \
     $(wildcard include/config/sys/fsl/sec/compat.h) \
     $(wildcard include/config/pci.h) \
-  /home/peich/share/source/smart210-SDK/u-boot-2014.04/tools/imagetool.h \
+  /home/peich/share/source/tiny210v2-sdk/u-boot-2014.04/tools/imagetool.h \
   include/image.h \
     $(wildcard include/config/fit.h) \
     $(wildcard include/config/fit/verbose.h) \

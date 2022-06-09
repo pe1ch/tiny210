@@ -35,10 +35,10 @@ Linker script and memory map
                 0x3480004c                _bss_end_ofs
                 0x34800050                _end_ofs
                 0x34800054                IRQ_STACK_START_IN
-                0x348000b0                relocate_code
-                0x348001d0                save_boot_params
-                0x348001d4                cpu_init_cp15
-                0x3480020c                cpu_init_crit
+                0x348000a4                relocate_code
+                0x348001c4                save_boot_params
+                0x348001c8                cpu_init_cp15
+                0x34800200                cpu_init_crit
                 0x348004c4                led1_on
  *(.text)
  .text          0x34800500      0x908 board/samsung/goni/libgoni.o
@@ -656,7 +656,7 @@ Linker script and memory map
                 0x3481f4ac                ping_start
                 0x3481f5d0                ping_receive
                 0x3481fbc4                TftpStart
- .text          0x3481fea8       0x24 /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+ .text          0x3481fea8       0x24 /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
                 0x3481fea8                raise
                 0x3481fec4                __aeabi_unwind_cpp_pr0
                 0x3481fec8                __aeabi_unwind_cpp_pr1
@@ -763,7 +763,7 @@ Linker script and memory map
                 0x34827b59      0x6d2 net/libnet.o
                                 0x85c (size before relaxing)
  .rodata.str1.1
-                0x3482822b       0x1b /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+                0x3482822b       0x1b /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
 
 .hash           0x34828248       0x48
  .hash          0x34828248       0x48 arch/arm/cpu/armv7/start.o
@@ -810,7 +810,7 @@ Linker script and memory map
                 0x34828c34                NetBcastAddr
                 0x34828c54                TftpRRQTimeoutCountMax
                 0x34828c58                TftpRRQTimeoutMSecs
- .data          0x34828c5c        0x0 /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+ .data          0x34828c5c        0x0 /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
  .data          0x34828c5c        0x0 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
  .data          0x34828c5c        0x0 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_divsi3.o)
  .data          0x34828c5c        0x0 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_lshrdi3.o)
@@ -885,23 +885,23 @@ Linker script and memory map
                 0x34829100                . = ALIGN (0x4)
                 0x34829100                __image_copy_end = .
 
-.rel.dyn        0x34829100     0x49e0
+.rel.dyn        0x34829100     0x49e8
                 0x34829100                __rel_dyn_start = .
  *(.rel*)
  .rel.got       0x00000000        0x0 arch/arm/cpu/armv7/start.o
  .rel.plt       0x00000000        0x0 arch/arm/cpu/armv7/start.o
- .rel.text      0x34829100     0x3298 arch/arm/cpu/armv7/start.o
- .rel.data      0x3482c398      0xc00 arch/arm/cpu/armv7/start.o
- .rel.rodata    0x3482cf98      0x538 arch/arm/cpu/armv7/start.o
+ .rel.text      0x34829100     0x32a0 arch/arm/cpu/armv7/start.o
+ .rel.data      0x3482c3a0      0xc00 arch/arm/cpu/armv7/start.o
+ .rel.rodata    0x3482cfa0      0x538 arch/arm/cpu/armv7/start.o
  .rel.u_boot_cmd
-                0x3482d4d0      0x610 arch/arm/cpu/armv7/start.o
-                0x3482dae0                __rel_dyn_end = .
+                0x3482d4d8      0x610 arch/arm/cpu/armv7/start.o
+                0x3482dae8                __rel_dyn_end = .
 
-.dynsym         0x3482dae0       0xd0
-                0x3482dae0                __dynsym_start = .
+.dynsym         0x3482dae8       0xd0
+                0x3482dae8                __dynsym_start = .
  *(.dynsym)
- .dynsym        0x3482dae0       0xd0 arch/arm/cpu/armv7/start.o
-                0x3482dbb0                _end = .
+ .dynsym        0x3482dae8       0xd0 arch/arm/cpu/armv7/start.o
+                0x3482dbb8                _end = .
                 0x3482e000                . = ALIGN (0x1000)
 
 .mmutable
@@ -1005,7 +1005,7 @@ Linker script and memory map
                 0x3482d99c                NetServerEther
                 0x3482d9a4                BootFile
                 0x3482e2d4                NetPingIP
- .bss           0x3482e390        0x0 /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+ .bss           0x3482e390        0x0 /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
  .bss           0x3482e390        0x0 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
  .bss           0x3482e390        0x0 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_divsi3.o)
  .bss           0x3482e390        0x0 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_lshrdi3.o)
@@ -1087,7 +1087,7 @@ LOAD net/libnet.o
 LOAD post/libpost.o
 LOAD test/libtest.o
 END GROUP
-LOAD /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+LOAD /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
 LOAD /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a
 OUTPUT(u-boot elf32-littlearm)
 
@@ -1140,7 +1140,7 @@ OUTPUT(u-boot elf32-littlearm)
  .ARM.attributes
                 0x000003ce       0x2d net/libnet.o
  .ARM.attributes
-                0x000003fb       0x2d /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+                0x000003fb       0x2d /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
  .ARM.attributes
                 0x00000428       0x28 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
  .ARM.attributes
@@ -1201,7 +1201,7 @@ OUTPUT(u-boot elf32-littlearm)
  .note.GNU-stack
                 0x00000000        0x0 net/libnet.o
  .note.GNU-stack
-                0x00000000        0x0 /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+                0x00000000        0x0 /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
  .note.GNU-stack
                 0x00000000        0x0 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
  .note.GNU-stack
@@ -1239,71 +1239,71 @@ OUTPUT(u-boot elf32-littlearm)
  .comment       0x00000000      0x1dc lib/libgeneric.o
  .comment       0x00000000       0x1c lib/zlib/libz.o
  .comment       0x00000000       0xc4 net/libnet.o
- .comment       0x00000000       0x1c /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+ .comment       0x00000000       0x1c /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
 
-.debug_line     0x00000000    0x108c9
+.debug_line     0x00000000    0x111b3
  .debug_line    0x00000000       0xe6 arch/arm/cpu/armv7/start.o
- .debug_line    0x000000e6      0x5d2 board/samsung/goni/libgoni.o
- .debug_line    0x000006b8      0x4a4 arch/arm/cpu/armv7/libarmv7.o
- .debug_line    0x00000b5c      0x78d arch/arm/cpu/armv7/s5p-common/libs5p-common.o
- .debug_line    0x000012e9      0x289 arch/arm/cpu/armv7/s5pc1xx/libs5pc1xx.o
- .debug_line    0x00001572      0xb1c arch/arm/lib/libarm.o
- .debug_line    0x0000208e     0x5f2a common/libcommon.o
- .debug_line    0x00007fb8      0x513 disk/libdisk.o
- .debug_line    0x000084cb      0x1c0 drivers/gpio/libgpio.o
- .debug_line    0x0000868b      0x22a drivers/i2c/libi2c.o
- .debug_line    0x000088b5      0x2ad drivers/input/libinput.o
- .debug_line    0x00008b62      0x4b3 drivers/misc/libmisc.o
- .debug_line    0x00009015      0xcfe drivers/mmc/libmmc.o
- .debug_line    0x00009d13      0x651 drivers/mtd/libmtd.o
- .debug_line    0x0000a364      0x3dd drivers/mtd/onenand/libonenand.o
- .debug_line    0x0000a741      0x498 drivers/net/libnet.o
- .debug_line    0x0000abd9      0x232 drivers/pcmcia/libpcmcia.o
- .debug_line    0x0000ae0b      0x119 drivers/rtc/librtc.o
- .debug_line    0x0000af24      0x23d drivers/serial/libserial.o
- .debug_line    0x0000b161     0x10b9 drivers/usb/gadget/libusb_gadget.o
- .debug_line    0x0000c21a     0x1eb6 lib/libgeneric.o
- .debug_line    0x0000e0d0      0xb45 lib/zlib/libz.o
- .debug_line    0x0000ec15     0x1829 net/libnet.o
- .debug_line    0x0001043e      0x13f /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
- .debug_line    0x0001057d       0x9e /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
- .debug_line    0x0001061b       0xaa /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_divsi3.o)
- .debug_line    0x000106c5       0x81 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_lshrdi3.o)
- .debug_line    0x00010746       0x81 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_ashrdi3.o)
- .debug_line    0x000107c7       0x81 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_ashldi3.o)
- .debug_line    0x00010848       0x81 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_dvmd_lnx.o)
+ .debug_line    0x000000e6      0x618 board/samsung/goni/libgoni.o
+ .debug_line    0x000006fe      0x4dc arch/arm/cpu/armv7/libarmv7.o
+ .debug_line    0x00000bda      0x78d arch/arm/cpu/armv7/s5p-common/libs5p-common.o
+ .debug_line    0x00001367      0x289 arch/arm/cpu/armv7/s5pc1xx/libs5pc1xx.o
+ .debug_line    0x000015f0      0xb54 arch/arm/lib/libarm.o
+ .debug_line    0x00002144     0x6726 common/libcommon.o
+ .debug_line    0x0000886a      0x513 disk/libdisk.o
+ .debug_line    0x00008d7d      0x1c0 drivers/gpio/libgpio.o
+ .debug_line    0x00008f3d      0x22a drivers/i2c/libi2c.o
+ .debug_line    0x00009167      0x2e5 drivers/input/libinput.o
+ .debug_line    0x0000944c      0x4b3 drivers/misc/libmisc.o
+ .debug_line    0x000098ff      0xcfe drivers/mmc/libmmc.o
+ .debug_line    0x0000a5fd      0x651 drivers/mtd/libmtd.o
+ .debug_line    0x0000ac4e      0x3dd drivers/mtd/onenand/libonenand.o
+ .debug_line    0x0000b02b      0x498 drivers/net/libnet.o
+ .debug_line    0x0000b4c3      0x232 drivers/pcmcia/libpcmcia.o
+ .debug_line    0x0000b6f5      0x119 drivers/rtc/librtc.o
+ .debug_line    0x0000b80e      0x23d drivers/serial/libserial.o
+ .debug_line    0x0000ba4b     0x10b9 drivers/usb/gadget/libusb_gadget.o
+ .debug_line    0x0000cb04     0x1eb6 lib/libgeneric.o
+ .debug_line    0x0000e9ba      0xb45 lib/zlib/libz.o
+ .debug_line    0x0000f4ff     0x1829 net/libnet.o
+ .debug_line    0x00010d28      0x13f /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+ .debug_line    0x00010e67       0x9e /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
+ .debug_line    0x00010f05       0xaa /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_divsi3.o)
+ .debug_line    0x00010faf       0x81 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_lshrdi3.o)
+ .debug_line    0x00011030       0x81 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_ashrdi3.o)
+ .debug_line    0x000110b1       0x81 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_ashldi3.o)
+ .debug_line    0x00011132       0x81 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_dvmd_lnx.o)
 
-.debug_info     0x00000000    0x41fcc
- .debug_info    0x00000000       0x6b arch/arm/cpu/armv7/start.o
- .debug_info    0x0000006b     0x1cfe board/samsung/goni/libgoni.o
- .debug_info    0x00001d69     0x1163 arch/arm/cpu/armv7/libarmv7.o
- .debug_info    0x00002ecc     0x1c49 arch/arm/cpu/armv7/s5p-common/libs5p-common.o
- .debug_info    0x00004b15     0x1044 arch/arm/cpu/armv7/s5pc1xx/libs5pc1xx.o
- .debug_info    0x00005b59     0x327f arch/arm/lib/libarm.o
- .debug_info    0x00008dd8    0x170d0 common/libcommon.o
- .debug_info    0x0001fea8     0x14ce disk/libdisk.o
- .debug_info    0x00021376      0xa30 drivers/gpio/libgpio.o
- .debug_info    0x00021da6      0x9a1 drivers/i2c/libi2c.o
- .debug_info    0x00022747      0xe7b drivers/input/libinput.o
- .debug_info    0x000235c2     0x1236 drivers/misc/libmisc.o
- .debug_info    0x000247f8     0x3b82 drivers/mmc/libmmc.o
- .debug_info    0x0002837a     0x237e drivers/mtd/libmtd.o
- .debug_info    0x0002a6f8     0x1ec5 drivers/mtd/onenand/libonenand.o
- .debug_info    0x0002c5bd     0x1263 drivers/net/libnet.o
- .debug_info    0x0002d820      0x59c drivers/pcmcia/libpcmcia.o
- .debug_info    0x0002ddbc      0x2ce drivers/rtc/librtc.o
- .debug_info    0x0002e08a      0xee5 drivers/serial/libserial.o
- .debug_info    0x0002ef6f     0x533a drivers/usb/gadget/libusb_gadget.o
- .debug_info    0x000342a9     0x558a lib/libgeneric.o
- .debug_info    0x00039833     0x128b lib/zlib/libz.o
- .debug_info    0x0003aabe     0x6d1d net/libnet.o
- .debug_info    0x000417db      0x323 /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
- .debug_info    0x00041afe       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
- .debug_info    0x00041bcb       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_divsi3.o)
- .debug_info    0x00041c98       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_lshrdi3.o)
- .debug_info    0x00041d65       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_ashrdi3.o)
- .debug_info    0x00041e32       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_ashldi3.o)
- .debug_info    0x00041eff       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_dvmd_lnx.o)
+.debug_info     0x00000000    0x41fe8
+ .debug_info    0x00000000       0x79 arch/arm/cpu/armv7/start.o
+ .debug_info    0x00000079     0x1d0c board/samsung/goni/libgoni.o
+ .debug_info    0x00001d85     0x1163 arch/arm/cpu/armv7/libarmv7.o
+ .debug_info    0x00002ee8     0x1c49 arch/arm/cpu/armv7/s5p-common/libs5p-common.o
+ .debug_info    0x00004b31     0x1044 arch/arm/cpu/armv7/s5pc1xx/libs5pc1xx.o
+ .debug_info    0x00005b75     0x327f arch/arm/lib/libarm.o
+ .debug_info    0x00008df4    0x170d0 common/libcommon.o
+ .debug_info    0x0001fec4     0x14ce disk/libdisk.o
+ .debug_info    0x00021392      0xa30 drivers/gpio/libgpio.o
+ .debug_info    0x00021dc2      0x9a1 drivers/i2c/libi2c.o
+ .debug_info    0x00022763      0xe7b drivers/input/libinput.o
+ .debug_info    0x000235de     0x1236 drivers/misc/libmisc.o
+ .debug_info    0x00024814     0x3b82 drivers/mmc/libmmc.o
+ .debug_info    0x00028396     0x237e drivers/mtd/libmtd.o
+ .debug_info    0x0002a714     0x1ec5 drivers/mtd/onenand/libonenand.o
+ .debug_info    0x0002c5d9     0x1263 drivers/net/libnet.o
+ .debug_info    0x0002d83c      0x59c drivers/pcmcia/libpcmcia.o
+ .debug_info    0x0002ddd8      0x2ce drivers/rtc/librtc.o
+ .debug_info    0x0002e0a6      0xee5 drivers/serial/libserial.o
+ .debug_info    0x0002ef8b     0x533a drivers/usb/gadget/libusb_gadget.o
+ .debug_info    0x000342c5     0x558a lib/libgeneric.o
+ .debug_info    0x0003984f     0x128b lib/zlib/libz.o
+ .debug_info    0x0003aada     0x6d1d net/libnet.o
+ .debug_info    0x000417f7      0x323 /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+ .debug_info    0x00041b1a       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
+ .debug_info    0x00041be7       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_divsi3.o)
+ .debug_info    0x00041cb4       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_lshrdi3.o)
+ .debug_info    0x00041d81       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_ashrdi3.o)
+ .debug_info    0x00041e4e       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_ashldi3.o)
+ .debug_info    0x00041f1b       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_dvmd_lnx.o)
 
 .debug_abbrev   0x00000000     0xe480
  .debug_abbrev  0x00000000       0x14 arch/arm/cpu/armv7/start.o
@@ -1329,7 +1329,7 @@ OUTPUT(u-boot elf32-littlearm)
  .debug_abbrev  0x0000ae31     0x18ff lib/libgeneric.o
  .debug_abbrev  0x0000c730      0x38b lib/zlib/libz.o
  .debug_abbrev  0x0000cabb     0x1837 net/libnet.o
- .debug_abbrev  0x0000e2f2      0x116 /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+ .debug_abbrev  0x0000e2f2      0x116 /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
  .debug_abbrev  0x0000e408       0x14 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
  .debug_abbrev  0x0000e41c       0x14 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_divsi3.o)
  .debug_abbrev  0x0000e430       0x14 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_lshrdi3.o)
@@ -1381,7 +1381,7 @@ OUTPUT(u-boot elf32-littlearm)
  .debug_aranges
                 0x00000b60       0xe0 net/libnet.o
  .debug_aranges
-                0x00000c40       0x20 /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+                0x00000c40       0x20 /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
  .debug_aranges
                 0x00000c60       0x20 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
  .debug_aranges
@@ -1438,7 +1438,7 @@ OUTPUT(u-boot elf32-littlearm)
  .debug_pubnames
                 0x000032da      0x713 net/libnet.o
  .debug_pubnames
-                0x000039ed       0x52 /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+                0x000039ed       0x52 /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
 
 .debug_frame    0x00000000     0x540c
  .debug_frame   0x00000000       0xf8 board/samsung/goni/libgoni.o
@@ -1461,56 +1461,56 @@ OUTPUT(u-boot elf32-littlearm)
  .debug_frame   0x00003f98      0x9ac lib/libgeneric.o
  .debug_frame   0x00004944      0x11c lib/zlib/libz.o
  .debug_frame   0x00004a60      0x924 net/libnet.o
- .debug_frame   0x00005384       0x48 /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+ .debug_frame   0x00005384       0x48 /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
  .debug_frame   0x000053cc       0x20 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
  .debug_frame   0x000053ec       0x20 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_divsi3.o)
 
-.debug_str      0x00000000     0x9174
- .debug_str     0x00000000      0xb8c board/samsung/goni/libgoni.o
-                               0x10e5 (size before relaxing)
- .debug_str     0x00000b8c      0x331 arch/arm/cpu/armv7/libarmv7.o
-                                0x999 (size before relaxing)
- .debug_str     0x00000ebd      0x308 arch/arm/cpu/armv7/s5p-common/libs5p-common.o
+.debug_str      0x00000000     0x9265
+ .debug_str     0x00000000      0xbd5 board/samsung/goni/libgoni.o
+                               0x1101 (size before relaxing)
+ .debug_str     0x00000bd5      0x37a arch/arm/cpu/armv7/libarmv7.o
+                                0x9a7 (size before relaxing)
+ .debug_str     0x00000f4f      0x308 arch/arm/cpu/armv7/s5p-common/libs5p-common.o
                                 0xf5e (size before relaxing)
- .debug_str     0x000011c5      0x2ce arch/arm/cpu/armv7/s5pc1xx/libs5pc1xx.o
+ .debug_str     0x00001257      0x2ce arch/arm/cpu/armv7/s5pc1xx/libs5pc1xx.o
                                 0x51c (size before relaxing)
- .debug_str     0x00001493     0x12c4 arch/arm/lib/libarm.o
-                               0x2e54 (size before relaxing)
- .debug_str     0x00002757     0x2aa3 common/libcommon.o
-                               0xbae7 (size before relaxing)
- .debug_str     0x000051fa      0x2c0 disk/libdisk.o
+ .debug_str     0x00001525     0x1307 arch/arm/lib/libarm.o
+                               0x2e62 (size before relaxing)
+ .debug_str     0x0000282c     0x2ab1 common/libcommon.o
+                               0xbcdf (size before relaxing)
+ .debug_str     0x000052dd      0x2c0 disk/libdisk.o
                                 0x937 (size before relaxing)
- .debug_str     0x000054ba      0x12d drivers/gpio/libgpio.o
+ .debug_str     0x0000559d      0x12d drivers/gpio/libgpio.o
                                 0x382 (size before relaxing)
- .debug_str     0x000055e7       0xc6 drivers/i2c/libi2c.o
+ .debug_str     0x000056ca       0xc6 drivers/i2c/libi2c.o
                                 0x3b3 (size before relaxing)
- .debug_str     0x000056ad      0x2de drivers/input/libinput.o
-                                0x54b (size before relaxing)
- .debug_str     0x0000598b      0x11a drivers/misc/libmisc.o
+ .debug_str     0x00005790      0x2ec drivers/input/libinput.o
+                                0x559 (size before relaxing)
+ .debug_str     0x00005a7c      0x11a drivers/misc/libmisc.o
                                 0xbf1 (size before relaxing)
- .debug_str     0x00005aa5      0x490 drivers/mmc/libmmc.o
+ .debug_str     0x00005b96      0x490 drivers/mmc/libmmc.o
                                0x11c3 (size before relaxing)
- .debug_str     0x00005f35      0x298 drivers/mtd/libmtd.o
+ .debug_str     0x00006026      0x298 drivers/mtd/libmtd.o
                                 0xde4 (size before relaxing)
- .debug_str     0x000061cd      0x48c drivers/mtd/onenand/libonenand.o
+ .debug_str     0x000062be      0x48c drivers/mtd/onenand/libonenand.o
                                 0xbbc (size before relaxing)
- .debug_str     0x00006659      0x2da drivers/net/libnet.o
+ .debug_str     0x0000674a      0x2da drivers/net/libnet.o
                                 0x4f0 (size before relaxing)
- .debug_str     0x00006933       0x54 drivers/pcmcia/libpcmcia.o
+ .debug_str     0x00006a24       0x54 drivers/pcmcia/libpcmcia.o
                                 0x427 (size before relaxing)
- .debug_str     0x00006987       0x3b drivers/rtc/librtc.o
+ .debug_str     0x00006a78       0x3b drivers/rtc/librtc.o
                                 0x209 (size before relaxing)
- .debug_str     0x000069c2      0x30c drivers/serial/libserial.o
+ .debug_str     0x00006ab3      0x30c drivers/serial/libserial.o
                                 0x67e (size before relaxing)
- .debug_str     0x00006cce      0xabc drivers/usb/gadget/libusb_gadget.o
+ .debug_str     0x00006dbf      0xabc drivers/usb/gadget/libusb_gadget.o
                                0x186c (size before relaxing)
- .debug_str     0x0000778a      0x6f2 lib/libgeneric.o
+ .debug_str     0x0000787b      0x6f2 lib/libgeneric.o
                                0x22f8 (size before relaxing)
- .debug_str     0x00007e7c      0x2cc lib/zlib/libz.o
+ .debug_str     0x00007f6d      0x2cc lib/zlib/libz.o
                                 0x69c (size before relaxing)
- .debug_str     0x00008148      0xfe3 net/libnet.o
+ .debug_str     0x00008239      0xfe3 net/libnet.o
                                0x4944 (size before relaxing)
- .debug_str     0x0000912b       0x49 /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+ .debug_str     0x0000921c       0x49 /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
                                 0x24c (size before relaxing)
 
 .debug_loc      0x00000000    0x244e2
@@ -1534,7 +1534,7 @@ OUTPUT(u-boot elf32-littlearm)
  .debug_loc     0x0001a7b5     0x4695 lib/libgeneric.o
  .debug_loc     0x0001ee4a     0x2642 lib/zlib/libz.o
  .debug_loc     0x0002148c     0x3018 net/libnet.o
- .debug_loc     0x000244a4       0x3e /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+ .debug_loc     0x000244a4       0x3e /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
 
 .debug_pubtypes
                 0x00000000     0x480c
@@ -1583,7 +1583,7 @@ OUTPUT(u-boot elf32-littlearm)
  .debug_pubtypes
                 0x00004249      0x570 net/libnet.o
  .debug_pubtypes
-                0x000047b9       0x53 /home/peich/share/source/u-boot-2012.10/arch/arm/lib/eabi_compat.o
+                0x000047b9       0x53 /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/arch/arm/lib/eabi_compat.o
 
 .debug_ranges   0x00000000     0x2810
  .debug_ranges  0x00000000       0x30 board/samsung/goni/libgoni.o

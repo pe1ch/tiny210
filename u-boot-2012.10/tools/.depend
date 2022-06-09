@@ -1,8 +1,9 @@
-image.o: /home/peich/share/source/u-boot-2012.10/common/image.c \
+image.o: \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/common/image.c \
  /usr/include/stdc-predef.h \
- /home/peich/share/source/u-boot-2012.10/tools/mkimage.h \
- /home/peich/share/source/u-boot-2012.10/tools/os_support.h \
- /home/peich/share/source/u-boot-2012.10/include/compiler.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/mkimage.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/os_support.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -70,21 +71,22 @@ image.o: /home/peich/share/source/u-boot-2012.10/common/image.c \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /home/peich/share/source/u-boot-2012.10/include/sha1.h \
- /home/peich/share/source/u-boot-2012.10/tools/fdt_host.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/libfdt.h \
- /home/peich/share/source/u-boot-2012.10/include/libfdt_env.h \
- /home/peich/share/source/u-boot-2012.10/include/compiler.h \
- /home/peich/share/source/u-boot-2012.10/include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt_support.h \
- /home/peich/share/source/u-boot-2012.10/include/u-boot/md5.h \
- /home/peich/share/source/u-boot-2012.10/include/image.h \
- /home/peich/share/source/u-boot-2012.10/include/libfdt.h \
- /home/peich/share/source/u-boot-2012.10/include/fdt_support.h
-crc32.o: /home/peich/share/source/u-boot-2012.10/lib/crc32.c \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/sha1.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/fdt_host.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/libfdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/libfdt_env.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/compiler.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt_support.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/u-boot/md5.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/image.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/libfdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/fdt_support.h
+crc32.o: \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/crc32.c \
  /usr/include/stdc-predef.h \
- /home/peich/share/source/u-boot-2012.10/include/compiler.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -143,11 +145,11 @@ crc32.o: /home/peich/share/source/u-boot-2012.10/lib/crc32.c \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/peich/share/source/u-boot-2012.10/include/u-boot/crc.h \
- /home/peich/share/source/u-boot-2012.10/include/u-boot/zlib.h
-md5.o: /home/peich/share/source/u-boot-2012.10/lib/md5.c \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/u-boot/crc.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/u-boot/zlib.h
+md5.o: /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/md5.c \
  /usr/include/stdc-predef.h \
- /home/peich/share/source/u-boot-2012.10/include/compiler.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -206,8 +208,8 @@ md5.o: /home/peich/share/source/u-boot-2012.10/lib/md5.c \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/peich/share/source/u-boot-2012.10/include/u-boot/md5.h
-sha1.o: /home/peich/share/source/u-boot-2012.10/lib/sha1.c \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/u-boot/md5.h
+sha1.o: /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/sha1.c \
  /usr/include/stdc-predef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -219,10 +221,10 @@ sha1.o: /home/peich/share/source/u-boot-2012.10/lib/sha1.c \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/peich/share/source/u-boot-2012.10/include/watchdog.h \
- /home/peich/share/source/u-boot-2012.10/include/sha1.h
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/watchdog.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/sha1.h
 gen_eth_addr.o: \
- /home/peich/share/source/u-boot-2012.10/tools/gen_eth_addr.c \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/gen_eth_addr.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -277,10 +279,11 @@ gen_eth_addr.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
-img2srec.o: /home/peich/share/source/u-boot-2012.10/tools/img2srec.c \
+img2srec.o: \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/img2srec.c \
  /usr/include/stdc-predef.h \
- /home/peich/share/source/u-boot-2012.10/tools/os_support.h \
- /home/peich/share/source/u-boot-2012.10/include/compiler.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/os_support.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -346,10 +349,11 @@ img2srec.o: /home/peich/share/source/u-boot-2012.10/tools/img2srec.c \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h
-fdt.o: /home/peich/share/source/u-boot-2012.10/lib/libfdt/fdt.c \
+fdt.o: \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/libfdt/fdt.c \
  /usr/include/stdc-predef.h \
- /home/peich/share/source/u-boot-2012.10/include/libfdt_env.h \
- /home/peich/share/source/u-boot-2012.10/include/compiler.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/libfdt_env.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -408,16 +412,17 @@ fdt.o: /home/peich/share/source/u-boot-2012.10/lib/libfdt/fdt.c \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/peich/share/source/u-boot-2012.10/tools/fdt_host.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/libfdt.h \
- /home/peich/share/source/u-boot-2012.10/include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt_support.h \
- /home/peich/share/source/u-boot-2012.10/lib/libfdt/libfdt_internal.h
-fdt_ro.o: /home/peich/share/source/u-boot-2012.10/lib/libfdt/fdt_ro.c \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/fdt_host.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/libfdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt_support.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/libfdt/libfdt_internal.h
+fdt_ro.o: \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/libfdt/fdt_ro.c \
  /usr/include/stdc-predef.h \
- /home/peich/share/source/u-boot-2012.10/include/libfdt_env.h \
- /home/peich/share/source/u-boot-2012.10/include/compiler.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/libfdt_env.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -476,16 +481,17 @@ fdt_ro.o: /home/peich/share/source/u-boot-2012.10/lib/libfdt/fdt_ro.c \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/peich/share/source/u-boot-2012.10/tools/fdt_host.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/libfdt.h \
- /home/peich/share/source/u-boot-2012.10/include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt_support.h \
- /home/peich/share/source/u-boot-2012.10/lib/libfdt/libfdt_internal.h
-fdt_rw.o: /home/peich/share/source/u-boot-2012.10/lib/libfdt/fdt_rw.c \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/fdt_host.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/libfdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt_support.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/libfdt/libfdt_internal.h
+fdt_rw.o: \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/libfdt/fdt_rw.c \
  /usr/include/stdc-predef.h \
- /home/peich/share/source/u-boot-2012.10/include/libfdt_env.h \
- /home/peich/share/source/u-boot-2012.10/include/compiler.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/libfdt_env.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -544,17 +550,17 @@ fdt_rw.o: /home/peich/share/source/u-boot-2012.10/lib/libfdt/fdt_rw.c \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/peich/share/source/u-boot-2012.10/tools/fdt_host.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/libfdt.h \
- /home/peich/share/source/u-boot-2012.10/include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt_support.h \
- /home/peich/share/source/u-boot-2012.10/lib/libfdt/libfdt_internal.h
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/fdt_host.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/libfdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt_support.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/libfdt/libfdt_internal.h
 fdt_strerror.o: \
- /home/peich/share/source/u-boot-2012.10/lib/libfdt/fdt_strerror.c \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/libfdt/fdt_strerror.c \
  /usr/include/stdc-predef.h \
- /home/peich/share/source/u-boot-2012.10/include/libfdt_env.h \
- /home/peich/share/source/u-boot-2012.10/include/compiler.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/libfdt_env.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -613,16 +619,17 @@ fdt_strerror.o: \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/peich/share/source/u-boot-2012.10/tools/fdt_host.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/libfdt.h \
- /home/peich/share/source/u-boot-2012.10/include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt_support.h \
- /home/peich/share/source/u-boot-2012.10/lib/libfdt/libfdt_internal.h
-fdt_wip.o: /home/peich/share/source/u-boot-2012.10/lib/libfdt/fdt_wip.c \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/fdt_host.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/libfdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt_support.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/libfdt/libfdt_internal.h
+fdt_wip.o: \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/libfdt/fdt_wip.c \
  /usr/include/stdc-predef.h \
- /home/peich/share/source/u-boot-2012.10/include/libfdt_env.h \
- /home/peich/share/source/u-boot-2012.10/include/compiler.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/libfdt_env.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -681,9 +688,9 @@ fdt_wip.o: /home/peich/share/source/u-boot-2012.10/lib/libfdt/fdt_wip.c \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/peich/share/source/u-boot-2012.10/tools/fdt_host.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/libfdt.h \
- /home/peich/share/source/u-boot-2012.10/include/fdt.h \
- /home/peich/share/source/u-boot-2012.10/tools/../include/fdt_support.h \
- /home/peich/share/source/u-boot-2012.10/lib/libfdt/libfdt_internal.h
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/fdt_host.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/libfdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/include/fdt.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/tools/../include/fdt_support.h \
+ /home/peich/share/source/tiny210v2-sdk/u-boot-2012.10/lib/libfdt/libfdt_internal.h

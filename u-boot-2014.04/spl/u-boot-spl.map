@@ -341,25 +341,25 @@ OUTPUT(u-boot-spl elf32-littlearm)
  .comment       0x00000000       0x38 board/samsung/smart210/built-in.o
  .comment       0x00000000       0x1c arch/arm/lib/eabi_compat.o
 
-.debug_line     0x00000000     0x1a09
+.debug_line     0x00000000     0x1a22
  .debug_line    0x00000000       0x87 arch/arm/cpu/armv7/start.o
- .debug_line    0x00000087      0x8d0 arch/arm/lib/built-in.o
- .debug_line    0x00000957      0x6f0 arch/arm/cpu/armv7/built-in.o
- .debug_line    0x00001047      0x2f7 arch/arm/cpu/armv7/s5pc1xx/built-in.o
- .debug_line    0x0000133e      0x469 board/samsung/smart210/built-in.o
- .debug_line    0x000017a7      0x143 arch/arm/lib/eabi_compat.o
- .debug_line    0x000018ea       0x9e /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
- .debug_line    0x00001988       0x81 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_dvmd_lnx.o)
+ .debug_line    0x00000087      0x8d9 arch/arm/lib/built-in.o
+ .debug_line    0x00000960      0x6f8 arch/arm/cpu/armv7/built-in.o
+ .debug_line    0x00001058      0x2f9 arch/arm/cpu/armv7/s5pc1xx/built-in.o
+ .debug_line    0x00001351      0x46d board/samsung/smart210/built-in.o
+ .debug_line    0x000017be      0x145 arch/arm/lib/eabi_compat.o
+ .debug_line    0x00001903       0x9e /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
+ .debug_line    0x000019a1       0x81 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_dvmd_lnx.o)
 
-.debug_info     0x00000000     0x73dd
- .debug_info    0x00000000       0x78 arch/arm/cpu/armv7/start.o
- .debug_info    0x00000078     0x1b05 arch/arm/lib/built-in.o
- .debug_info    0x00001b7d     0x1620 arch/arm/cpu/armv7/built-in.o
- .debug_info    0x0000319d     0x1060 arch/arm/cpu/armv7/s5pc1xx/built-in.o
- .debug_info    0x000041fd     0x2ceb board/samsung/smart210/built-in.o
- .debug_info    0x00006ee8      0x35b arch/arm/lib/eabi_compat.o
- .debug_info    0x00007243       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
- .debug_info    0x00007310       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_dvmd_lnx.o)
+.debug_info     0x00000000     0x73e2
+ .debug_info    0x00000000       0x79 arch/arm/cpu/armv7/start.o
+ .debug_info    0x00000079     0x1b06 arch/arm/lib/built-in.o
+ .debug_info    0x00001b7f     0x1620 arch/arm/cpu/armv7/built-in.o
+ .debug_info    0x0000319f     0x1062 arch/arm/cpu/armv7/s5pc1xx/built-in.o
+ .debug_info    0x00004201     0x2cec board/samsung/smart210/built-in.o
+ .debug_info    0x00006eed      0x35b arch/arm/lib/eabi_compat.o
+ .debug_info    0x00007248       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
+ .debug_info    0x00007315       0xcd /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_dvmd_lnx.o)
 
 .debug_abbrev   0x00000000     0x15df
  .debug_abbrev  0x00000000       0x14 arch/arm/cpu/armv7/start.o
@@ -410,17 +410,17 @@ OUTPUT(u-boot-spl elf32-littlearm)
  .debug_frame   0x0000063c       0x40 arch/arm/lib/eabi_compat.o
  .debug_frame   0x0000067c       0x20 /usr/local/arm/4.5.1/bin/../lib/gcc/arm-none-linux-gnueabi/4.5.1/libgcc.a(_udivsi3.o)
 
-.debug_str      0x00000000     0x181b
- .debug_str     0x00000000      0x6b9 arch/arm/lib/built-in.o
-                                0xf21 (size before relaxing)
- .debug_str     0x000006b9      0x3a6 arch/arm/cpu/armv7/built-in.o
-                                0xc7d (size before relaxing)
- .debug_str     0x00000a5f      0x2cb arch/arm/cpu/armv7/s5pc1xx/built-in.o
-                                0x526 (size before relaxing)
- .debug_str     0x00000d2a      0xa9b board/samsung/smart210/built-in.o
-                               0x1129 (size before relaxing)
- .debug_str     0x000017c5       0x56 arch/arm/lib/eabi_compat.o
-                                0x265 (size before relaxing)
+.debug_str      0x00000000     0x181c
+ .debug_str     0x00000000      0x6ba arch/arm/lib/built-in.o
+                                0xf26 (size before relaxing)
+ .debug_str     0x000006ba      0x3a6 arch/arm/cpu/armv7/built-in.o
+                                0xc81 (size before relaxing)
+ .debug_str     0x00000a60      0x2cb arch/arm/cpu/armv7/s5pc1xx/built-in.o
+                                0x527 (size before relaxing)
+ .debug_str     0x00000d2b      0xa9b board/samsung/smart210/built-in.o
+                               0x112b (size before relaxing)
+ .debug_str     0x000017c6       0x56 arch/arm/lib/eabi_compat.o
+                                0x266 (size before relaxing)
 
 .debug_loc      0x00000000     0x1773
  .debug_loc     0x00000000      0x557 arch/arm/lib/built-in.o
